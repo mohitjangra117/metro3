@@ -1,0 +1,57 @@
+<div class="screen" id="scr-nearby">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Nearby transport</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="chiprow" id="ntfilters">
+      <span class="filterchip on" data-filter="all">All</span>
+      <span class="filterchip" data-filter="bus">Bus</span>
+      <span class="filterchip" data-filter="rail">Rail</span>
+      <span class="filterchip" data-filter="auto">Auto</span>
+    </div>
+    <div id="ntlist" style="display:flex;flex-direction:column;gap:9px;">
+      <div class="list-item filteritem" data-type="bus">
+        <div class="icwrap">🚌</div>
+        <div style="flex:1;">
+          <div class="t">ISBT Kashmere Gate</div>
+          <div class="s">Bus terminal · 850 m</div>
+        </div>
+        <div class="r">10 min</div>
+      </div>
+      <div class="list-item filteritem" data-type="rail">
+        <div class="icwrap">🚉</div>
+        <div style="flex:1;">
+          <div class="t">New Delhi Railway Stn</div>
+          <div class="s">Railway · 1.2 km</div>
+        </div>
+        <div class="r">15 min</div>
+      </div>
+      <div class="list-item filteritem" data-type="rail">
+        <div class="icwrap">✈</div>
+        <div style="flex:1;">
+          <div class="t">Airport Express link</div>
+          <div class="s">via New Delhi · 1.4 km</div>
+        </div>
+        <div class="r">18 min</div>
+      </div>
+      <div class="list-item filteritem" data-type="auto">
+        <div class="icwrap">🛺</div>
+        <div style="flex:1;">
+          <div class="t">Auto stand — Gate 3</div>
+          <div class="s">Auto rickshaw · 120 m</div>
+        </div>
+        <div class="r">2 min</div>
+      </div>
+      <div class="list-item filteritem" data-type="bus">
+        <div class="icwrap">🚌</div>
+        <div style="flex:1;">
+          <div class="t">DTC Route 764</div>
+          <div class="s">Bus stop · 300 m</div>
+        </div>
+        <div class="r">4 min</div>
+      </div>
+    </div>
+  </div>
+</div>

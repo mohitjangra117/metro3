@@ -1,0 +1,111 @@
+<div class="screen" id="scr-home">
+  <div class="statusbar"><span id="clock1">9:41</span><span>●●● 5G 100%</span></div>
+  <div class="trackstrip">
+    <i style="background:var(--line-blue)"></i>
+    <i style="background:var(--line-yellow)"></i>
+    <i style="background:var(--line-pink)"></i>
+    <i style="background:var(--line-magenta)"></i>
+    <i style="background:var(--line-violet)"></i>
+  </div>
+  <div class="appbar">
+    <div>
+      <h2>Good morning, Aditi</h2>
+      <div class="sub2">Noida Sector 15 · 320 m away</div>
+    </div>
+    <div class="ic" onclick="push('profile')">A</div>
+  </div>
+  <div class="content">
+    <div class="search" onclick="openSearch('to')">◎ <span id="homesearchlabel">Where to?</span></div>
+
+    <div class="card" style="display:flex;align-items:center;gap:9px;background:var(--green-tint);border:none;padding:10px 13px;cursor:pointer;" onclick="push('servicealerts')">
+      <span class="livedot"></span>
+      <div style="font-size:11px;font-weight:600;color:var(--green-dark);flex:1;">Blue line running normally</div>
+      <span style="font-size:10px;color:var(--green-dark);font-weight:700;">Details ›</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div class="box" onclick="openSearch('to')" style="grid-row:span 2;background:var(--blue);border-radius:16px;padding:14px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;min-height:112px;">
+        <div style="font-size:20px;">↗</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;">Plan a route</div>
+          <div style="font-size:10px;opacity:.85;">Search & compare</div>
+        </div>
+      </div>
+      <div class="box" onclick="push('farecalc')" style="background:var(--amber);border-radius:16px;padding:12px;color:var(--amber-dark);min-height:50px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-size:16px;">▤</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;">Buy ticket</div>
+      </div>
+      <div class="box" onclick="push('livejourney')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:16px;padding:12px;min-height:50px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-size:16px;color:var(--blue);">●</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;">Live tracking</div>
+      </div>
+    </div>
+
+    <div class="section-label">More actions</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:7px;">
+      <div class="box" onclick="push('map')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">▦</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Map</div>
+      </div>
+      <div class="box" onclick="push('farecalc')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">₹</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Fare</div>
+      </div>
+      <div class="box" onclick="openStation('Rajiv Chowk')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">ⓘ</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Stations</div>
+      </div>
+      <div class="box" onclick="push('timetable')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">◷</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Timings</div>
+      </div>
+      <div class="box" onclick="push('nearby')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">🚌</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Nearby</div>
+      </div>
+      <div class="box" onclick="push('lastmile')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">🚶</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Last mile</div>
+      </div>
+      <div class="box" onclick="push('favorites')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">♡</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Saved</div>
+      </div>
+      <div class="box" onclick="push('settings')" style="background:var(--card);border:0.5px solid var(--hair);border-radius:13px;padding:9px 4px;text-align:center;">
+        <div style="font-size:15px;color:var(--blue-dark);">⚙</div>
+        <div style="font-size:9px;font-weight:600;margin-top:4px;">Settings</div>
+      </div>
+    </div>
+
+    <div class="card" style="background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#fff;border:none;display:flex;align-items:center;gap:10px;cursor:pointer;" onclick="push('wallet')">
+      <div style="font-size:20px;">💳</div>
+      <div style="flex:1;">
+        <div style="font-weight:700;font-size:12px;">Metro Wallet</div>
+        <div style="font-size:10px;opacity:.85;" id="homewalletline">Balance ₹210 · Tap to recharge</div>
+      </div>
+      <div style="font-size:14px;">›</div>
+    </div>
+
+    <div class="section-label">Nearby favourites</div>
+    <div class="chiprow" id="homefavchips">
+      <span class="chip" onclick="quickRoute('Rajiv Chowk')">Rajiv Chowk</span>
+      <span class="chip" onclick="quickRoute('Kirti Nagar')">Kirti Nagar</span>
+      <span class="chip" onclick="quickRoute('Hauz Khas')">Hauz Khas</span>
+    </div>
+
+    <div class="list-item" onclick="push('travelhistory')">
+      <div class="icwrap">↗</div>
+      <div style="flex:1;">
+        <div class="t">Noida Sec 15 → Kirti Nagar</div>
+        <div class="s">Yesterday, 9:12 AM · ₹50</div>
+      </div>
+      <div class="r">›</div>
+    </div>
+  </div>
+  <div class="bottomnav">
+    <div class="n active" data-tab="home" onclick="goRoot('home')"><span class="ni">⌂</span>Home</div>
+    <div class="n" data-tab="map" onclick="goRoot('map')"><span class="ni">▦</span>Map</div>
+    <div class="n" data-tab="wallet" onclick="goRoot('wallet')"><span class="ni">🎫</span>Tickets</div>
+    <div class="n" data-tab="profile" onclick="goRoot('profile')"><span class="ni">◍</span>Profile</div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="screen" id="scr-routeplanner">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Route</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+          <i style="width:6px;height:6px;border-radius:50%;background:var(--blue);display:block;"></i>
+          <div style="width:1px;height:18px;background:var(--hair);"></div>
+          <i style="width:6px;height:6px;border-radius:50%;background:var(--amber);display:block;"></i>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
+          <div id="rpfrom" style="background:var(--card);border:0.5px solid var(--hair);border-radius:10px;padding:9px 11px;font-size:11.5px;font-weight:600;cursor:pointer;" onclick="openSearch('from')">Noida Sector 15</div>
+          <div id="rpto" style="background:var(--card);border:0.5px solid var(--hair);border-radius:10px;padding:9px 11px;font-size:11.5px;font-weight:600;cursor:pointer;" onclick="openSearch('to')">Kirti Nagar</div>
+        </div>
+        <div class="swapbtn" onclick="swapRoute()">⇅</div>
+      </div>
+    </div>
+    <div class="tabsgroup" id="rptabs">
+      <div class="tabbtn on" data-mode="fast">Fastest</div>
+      <div class="tabbtn" data-mode="few">Fewest changes</div>
+      <div class="tabbtn" data-mode="cheap">Cheapest</div>
+    </div>
+    <div id="rpresult"></div>
+    <div class="btn" style="margin-top:auto;" onclick="push('ticketbooking')">Book this journey</div>
+    <div class="btn ghost" onclick="startLiveFromRoute()">Start journey now (live)</div>
+  </div>
+</div>

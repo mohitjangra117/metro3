@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=no">
+  <title>One Metro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screens" id="screens">
+    <!-- Embed splash screen directly for instant load -->
+    <div class="screen active" id="scr-splash">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;background:var(--blue);position:relative;">
+        <div class="trackstrip" style="position:absolute;top:0;left:0;right:0;">
+          <i style="background:var(--line-yellow)"></i>
+          <i style="background:var(--line-pink)"></i>
+          <i style="background:var(--line-magenta)"></i>
+          <i style="background:var(--line-violet)"></i>
+          <i style="background:var(--line-green)"></i>
+        </div>
+        <div style="text-align:center;color:#fff;animation:splashin .6s ease;">
+          <div style="width:70px;height:70px;border-radius:20px;background:#fff;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;">
+            <div style="display:flex;gap:3px;">
+              <div style="width:6px;height:24px;background:var(--line-blue);border-radius:2px;"></div>
+              <div style="width:6px;height:15px;background:var(--line-yellow);border-radius:2px;margin-top:9px;"></div>
+              <div style="width:6px;height:28px;background:var(--line-magenta);border-radius:2px;"></div>
+            </div>
+          </div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;">One Metro</div>
+          <div style="font-size:12px;opacity:.85;margin-top:6px;font-weight:500;">Plan. Track. Arrive.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

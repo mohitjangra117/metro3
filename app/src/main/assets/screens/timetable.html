@@ -1,0 +1,98 @@
+<div class="screen" id="scr-timetable">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Timetable</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="tabsgroup" id="tttabs">
+      <div class="tabbtn on" data-target="tt-blue">Blue</div>
+      <div class="tabbtn" data-target="tt-yellow">Yellow</div>
+      <div class="tabbtn" data-target="tt-red">Red</div>
+      <div class="tabbtn" data-target="tt-violet">Violet</div>
+      <div class="tabbtn" data-target="tt-magenta">Magenta</div>
+    </div>
+    
+    <!-- We will make these dynamic inside the JS loader, but here are the placeholders -->
+    <div class="tabpanel show" id="tt-blue">
+      <div class="kpi-row">
+        <div class="kpi"><b>4:45 AM</b><span>First Train</span></div>
+        <div class="kpi"><b>11:40 PM</b><span>Last Train</span></div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Peak hours frequency</div>
+          <div class="s">Every 3 min</div>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Off-peak frequency</div>
+          <div class="s">Every 5 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="tt-yellow">
+      <div class="kpi-row">
+        <div class="kpi"><b>5:00 AM</b><span>First Train</span></div>
+        <div class="kpi"><b>11:30 PM</b><span>Last Train</span></div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Peak hours frequency</div>
+          <div class="s">Every 3 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="tt-red">
+      <div class="kpi-row">
+        <div class="kpi"><b>5:00 AM</b><span>First Train</span></div>
+        <div class="kpi"><b>11:30 PM</b><span>Last Train</span></div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Peak hours frequency</div>
+          <div class="s">Every 3 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="tt-violet">
+      <div class="kpi-row">
+        <div class="kpi"><b>5:00 AM</b><span>First Train</span></div>
+        <div class="kpi"><b>11:30 PM</b><span>Last Train</span></div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Peak hours frequency</div>
+          <div class="s">Every 4 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="tt-magenta">
+      <div class="kpi-row">
+        <div class="kpi"><b>5:00 AM</b><span>First Train</span></div>
+        <div class="kpi"><b>11:30 PM</b><span>Last Train</span></div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">◷</div>
+        <div>
+          <div class="t">Peak hours frequency</div>
+          <div class="s">Every 4 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="background:var(--amber-tint);border:none;">
+      <div style="font-size:11px;color:var(--amber-dark);font-weight:700;">Sunday schedule differs — services start at 6:00 AM.</div>
+    </div>
+  </div>
+</div>

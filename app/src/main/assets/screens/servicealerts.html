@@ -1,0 +1,48 @@
+<div class="screen" id="scr-servicealerts">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Service alerts</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="list-item alert-item sel" data-detail="No disruptions reported. Trains running at 3–4 min frequency.">
+      <div class="icwrap" style="background:var(--green-tint);color:var(--green-dark);">●</div>
+      <div style="flex:1;">
+        <div class="t">Blue Line</div>
+        <div class="s">Normal service</div>
+      </div>
+      <span class="livedot"></span>
+    </div>
+    <div class="list-item alert-item" data-detail="Signal maintenance near Botanical Garden causing 5–7 min delays between 10 PM–12 AM.">
+      <div class="icwrap" style="background:var(--amber-tint);color:var(--amber-dark);">●</div>
+      <div style="flex:1;">
+        <div class="t">Yellow Line</div>
+        <div class="s">Minor delays</div>
+      </div>
+    </div>
+    <div class="list-item alert-item" data-detail="No disruptions reported. Trains running at 5 min frequency.">
+      <div class="icwrap" style="background:var(--green-tint);color:var(--green-dark);">●</div>
+      <div style="flex:1;">
+        <div class="t">Pink Line</div>
+        <div class="s">Normal service</div>
+      </div>
+    </div>
+    <div class="list-item alert-item" data-detail="Services suspended between Janakpuri West and Botanical Garden due to a technical fault. Feeder buses arranged." data-status="disrupted">
+      <div class="icwrap" style="background:var(--red-tint);color:var(--red);">●</div>
+      <div style="flex:1;">
+        <div class="t">Magenta Line</div>
+        <div class="s">Service disrupted</div>
+      </div>
+    </div>
+    <div class="list-item alert-item" data-detail="No disruptions reported. Trains running at 4 min frequency.">
+      <div class="icwrap" style="background:var(--green-tint);color:var(--green-dark);">●</div>
+      <div style="flex:1;">
+        <div class="t">Violet Line</div>
+        <div class="s">Normal service</div>
+      </div>
+    </div>
+    <div class="card" id="alertdetail" style="background:var(--blue-tint);border:none;">
+      <div style="font-size:11px;color:var(--blue-dark);font-weight:600;">No disruptions reported. Trains running at 3–4 min frequency.</div>
+    </div>
+  </div>
+</div>

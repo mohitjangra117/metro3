@@ -1,0 +1,32 @@
+<div class="screen" id="scr-ticketbooking">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Confirm ticket</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="card">
+      <div style="font-weight:700;font-size:13px;" id="tbroute">Noida Sector 15 → Kirti Nagar</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px;" id="tbmeta">1 adult · Token fare</div>
+      <div class="divider"></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;">
+        <span style="color:var(--muted);">Fare</span>
+        <b id="tbfare">₹--</b>
+      </div>
+    </div>
+    <div class="section-label">Pay with</div>
+    <div class="radiopt sel" data-payopt="upi">
+      <div class="dot"></div>
+      <div style="font-size:12px;font-weight:600;">UPI</div>
+    </div>
+    <div class="radiopt" data-payopt="wallet">
+      <div class="dot"></div>
+      <div style="font-size:12px;font-weight:600;">Metro wallet — <span id="tbwalletbal">₹210</span></div>
+    </div>
+    <div class="radiopt" data-payopt="card">
+      <div class="dot"></div>
+      <div style="font-size:12px;font-weight:600;">Card ending 4021</div>
+    </div>
+    <div class="btn amber" id="tbpaybtn" style="margin-top:auto;">Pay ₹--</div>
+  </div>
+</div>

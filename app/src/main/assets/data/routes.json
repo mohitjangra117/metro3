@@ -1,0 +1,97 @@
+{
+  "red": {
+    "label": "Red Line",
+    "color": "#D6455B",
+    "terminals": [
+      "Dilshad Garden",
+      "Rithala",
+      "Shaheed Sthal (New Bus Adda)"
+    ]
+  },
+  "yellow": {
+    "label": "Yellow Line",
+    "color": "#EFBF2E",
+    "terminals": [
+      "Huda City Centre",
+      "Qutab Minar",
+      "Samaypur Badli",
+      "Vishwavidyalaya"
+    ]
+  },
+  "blue": {
+    "label": "Blue Line",
+    "color": "#1B6FB8",
+    "terminals": [
+      "Dwarka Sector - 21",
+      "Noida Electronic City",
+      "Vaishali"
+    ]
+  },
+  "green": {
+    "label": "Green Line",
+    "color": "#3FA35A",
+    "terminals": [
+      "Brigadier Hoshiyar Singh",
+      "Inderlok",
+      "Kirti Nagar"
+    ]
+  },
+  "violet": {
+    "label": "Violet Line",
+    "color": "#7C5CE0",
+    "terminals": [
+      "Badarpur Border",
+      "Kashmere Gate",
+      "Raja Nahar Singh"
+    ]
+  },
+  "magenta": {
+    "label": "Magenta Line",
+    "color": "#A2328C",
+    "terminals": [
+      "Botanical Garden",
+      "Janak Puri West"
+    ]
+  },
+  "pink": {
+    "label": "Pink Line",
+    "color": "#E8558D",
+    "terminals": [
+      "Majlis Park",
+      "Shiv Vihar"
+    ]
+  },
+  "orange": {
+    "label": "Airport Express",
+    "color": "#F7941D",
+    "terminals": [
+      "Dwarka Sector - 21",
+      "New Delhi"
+    ]
+  },
+  "grey": {
+    "label": "Grey Line",
+    "color": "#8B9AAB",
+    "terminals": [
+      "Dhansa Bus Stand",
+      "Dwarka"
+    ]
+  },
+  "aqua": {
+    "label": "Aqua Line",
+    "color": "#00B5AD",
+    "terminals": [
+      "Depot Station",
+      "Noida Sector 142",
+      "Noida Sector 51"
+    ]
+  },
+  "rapid": {
+    "label": "Rapid Metro",
+    "color": "#6C757D",
+    "terminals": [
+      "Phase 3 (Rapid Metro)",
+      "Sector 55-56 (Rapid Metro)"
+    ]
+  }
+}

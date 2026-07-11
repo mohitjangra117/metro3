@@ -1,0 +1,64 @@
+<div class="screen" id="scr-station">
+  <div class="statusbar"><span>9:41</span><span>●●● 5G 100%</span></div>
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2 id="stname">Station</h2>
+    <div class="ic fav" id="stfav" onclick="toggleFav()">♡</div>
+  </div>
+  <div class="content">
+    <div class="chiprow" id="stlines"></div>
+    <div class="tabsgroup" id="sttabs">
+      <div class="tabbtn on" data-target="st-overview">Overview</div>
+      <div class="tabbtn" data-target="st-facil">Facilities</div>
+      <div class="tabbtn" data-target="st-exits">Exits</div>
+    </div>
+    
+    <div class="tabpanel show" id="st-overview">
+      <div class="kpi-row">
+        <div class="kpi"><b id="stfirsttrain">5:00 AM</b><span>First train</span></div>
+        <div class="kpi"><b id="stlasttrain">11:30 PM</b><span>Last train</span></div>
+      </div>
+      <div class="card">
+        <div class="section-label" style="margin-top:0;">Platform & Info</div>
+        <div style="font-weight:700;font-size:12px;" id="stplatforminfo">Interchange Station</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;" id="stcoords">Coordinates: --</div>
+      </div>
+      <div class="btn" onclick="planFromStation()">Plan a route from here</div>
+    </div>
+    
+    <div class="tabpanel" id="st-facil">
+      <div class="chiprow">
+        <span class="chip">Lift</span>
+        <span class="chip">Escalator</span>
+        <span class="chip">ATM</span>
+        <span class="chip">Parking</span>
+        <span class="chip">Washroom</span>
+        <span class="chip">Wi-Fi</span>
+      </div>
+    </div>
+    
+    <div class="tabpanel" id="st-exits">
+      <div class="list-item">
+        <div class="icwrap">1</div>
+        <div>
+          <div class="t">Gate 1</div>
+          <div class="s">Main Road exit</div>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">2</div>
+        <div>
+          <div class="t">Gate 2</div>
+          <div class="s">Market / Office complex</div>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="icwrap">3</div>
+        <div>
+          <div class="t">Gate 3</div>
+          <div class="s">Feeder Bus & Auto bay</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

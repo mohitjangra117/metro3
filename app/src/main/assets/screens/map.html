@@ -1,0 +1,62 @@
+<div class="screen" id="scr-map">
+  <div class="statusbar"><span>9:41</span><span>●●● 5G 100%</span></div>
+  <div class="trackstrip">
+    <i style="background:var(--line-blue)"></i>
+    <i style="background:var(--line-yellow)"></i>
+    <i style="background:var(--line-pink)"></i>
+    <i style="background:var(--line-magenta)"></i>
+    <i style="background:var(--line-violet)"></i>
+  </div>
+  <div class="appbar">
+    <h2>Metro map</h2>
+    <div class="ic" onclick="openSearch('to')">⌕</div>
+  </div>
+  <div class="content" style="position:relative; overflow: hidden;">
+    <div id="map-container" style="flex:1; width:100%; height:100%; display:flex; align-items:center; justify-content:center; overflow:auto;">
+      <svg id="mapsvg" viewBox="0 0 240 300" style="width:100%; min-width:320px; transition:transform .2s; transform:scale(1); transform-origin:center;">
+        <!-- Network Lines -->
+        <line x1="20" y1="40" x2="220" y2="40" stroke="var(--line-blue)" stroke-width="4" stroke-linecap="round" />
+        <line x1="60" y1="10" x2="60" y2="270" stroke="var(--line-yellow)" stroke-width="4" stroke-linecap="round" />
+        <line x1="30" y1="150" x2="210" y2="190" stroke="var(--line-pink)" stroke-width="4" stroke-linecap="round" />
+        <line x1="140" y1="20" x2="140" y2="280" stroke="var(--line-violet)" stroke-width="4" stroke-linecap="round" />
+        <line x1="90" y1="120" x2="190" y2="230" stroke="var(--line-magenta)" stroke-width="4" stroke-linecap="round" />
+        
+        <!-- Major Stations -->
+        <circle class="mapstation" onclick="openStation('Kirti Nagar')" cx="60" cy="40" r="7" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="60" y="30" font-size="8" font-weight="700" fill="var(--ink)" text-anchor="middle">Kirti Nagar</text>
+        
+        <circle class="mapstation" onclick="openStation('Rajiv Chowk')" cx="140" cy="40" r="7" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="140" y="30" font-size="8" font-weight="700" fill="var(--ink)" text-anchor="middle">Rajiv Chowk</text>
+        
+        <circle class="mapstation" onclick="openStation('Botanical Garden')" cx="90" cy="120" r="6" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="96" y="123" font-size="8" font-weight="700" fill="var(--ink)">Botanical Garden</text>
+        
+        <circle class="mapstation" onclick="openStation('Kashmere Gate')" cx="140" cy="190" r="7" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="148" y="193" font-size="8" font-weight="700" fill="var(--ink)">Kashmere Gate</text>
+        
+        <circle class="mapstation" onclick="openStation('Lajpat Nagar')" cx="190" cy="230" r="6" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="198" y="233" font-size="8" font-weight="700" fill="var(--ink)">Lajpat Nagar</text>
+        
+        <circle class="mapstation" onclick="openStation('Hauz Khas')" cx="140" cy="250" r="6" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="148" y="253" font-size="8" font-weight="700" fill="var(--ink)">Hauz Khas</text>
+        
+        <circle class="mapstation" onclick="openStation('New Delhi')" cx="60" cy="150" r="6" fill="var(--ink)" stroke="#fff" stroke-width="2" style="cursor:pointer;" />
+        <text x="68" y="153" font-size="8" font-weight="700" fill="var(--ink)">New Delhi</text>
+      </svg>
+    </div>
+    <div class="card" style="position:absolute; bottom:12px; left:18px; right:18px; text-align:left; z-index: 10;">
+      <div class="section-label" style="margin-top:0;">Interactive Map</div>
+      <div style="font-weight:700;font-size:12px;">Tap key interchange stations to view timings & platforms.</div>
+    </div>
+    <div style="position:absolute; right:18px; top:18px; display:flex; flex-direction:column; gap:6px; z-index: 10;">
+      <div class="ic" onclick="zoomMap(1)">+</div>
+      <div class="ic" onclick="zoomMap(-1)">−</div>
+    </div>
+  </div>
+  <div class="bottomnav">
+    <div class="n" data-tab="home" onclick="goRoot('home')"><span class="ni">⌂</span>Home</div>
+    <div class="n active" data-tab="map" onclick="goRoot('map')"><span class="ni">▦</span>Map</div>
+    <div class="n" data-tab="wallet" onclick="goRoot('wallet')"><span class="ni">🎫</span>Tickets</div>
+    <div class="n" data-tab="profile" onclick="goRoot('profile')"><span class="ni">◍</span>Profile</div>
+  </div>
+</div>

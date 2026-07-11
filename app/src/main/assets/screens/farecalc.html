@@ -1,0 +1,45 @@
+<div class="screen" id="scr-farecalc">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Fare calculator</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+          <i style="width:6px;height:6px;border-radius:50%;background:var(--blue);display:block;"></i>
+          <div style="width:1px;height:18px;background:var(--hair);"></div>
+          <i style="width:6px;height:6px;border-radius:50%;background:var(--amber);display:block;"></i>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
+          <div id="fcfrom" style="background:var(--card);border:0.5px solid var(--hair);border-radius:10px;padding:9px 11px;font-size:11.5px;font-weight:600;cursor:pointer;" onclick="openSearch('fcfrom')">Noida Sector 15</div>
+          <div id="fcto" style="background:var(--card);border:0.5px solid var(--hair);border-radius:10px;padding:9px 11px;font-size:11.5px;font-weight:600;cursor:pointer;" onclick="openSearch('fcto')">Kirti Nagar</div>
+        </div>
+        <div class="swapbtn" onclick="swapFare()">⇅</div>
+      </div>
+    </div>
+    <div class="kpi-row" id="fckpis">
+      <div class="kpi"><b>--</b><span>Stations</span></div>
+      <div class="kpi"><b>-- km</b><span>Distance</span></div>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <div class="fareopt sel" id="fctoken" onclick="selectFare('token')">
+        <div style="font-size:10px;color:var(--muted);font-weight:600;">TOKEN</div>
+        <div style="font-weight:700;font-size:16px;" id="fctokenprice">₹--</div>
+      </div>
+      <div class="fareopt" id="fccard" onclick="selectFare('card')">
+        <div style="font-size:10px;color:var(--muted);font-weight:600;">SMART CARD</div>
+        <div style="font-weight:700;font-size:16px;" id="fccardprice">₹--</div>
+      </div>
+    </div>
+    <div class="section-label">Passengers</div>
+    <div style="display:flex;align-items:center;gap:12px;background:var(--card);border:0.5px solid var(--hair);border-radius:12px;padding:9px 13px;">
+      <div style="flex:1;font-size:11.5px;font-weight:600;">Adults</div>
+      <div class="ic" onclick="changePax(-1)">−</div>
+      <div style="font-weight:700;font-size:13px;width:16px;text-align:center;" id="paxcount">1</div>
+      <div class="ic" onclick="changePax(1)">+</div>
+    </div>
+    <div class="btn" id="farebook" style="margin-top:auto;">Book this journey — ₹--</div>
+  </div>
+</div>

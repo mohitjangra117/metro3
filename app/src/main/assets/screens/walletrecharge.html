@@ -1,0 +1,29 @@
+<div class="screen" id="scr-walletrecharge">
+  <div class="appbar">
+    <div class="ic" onclick="back()">←</div>
+    <h2>Recharge wallet</h2>
+    <div style="width:30px;"></div>
+  </div>
+  <div class="content">
+    <div class="card center">
+      <div class="section-label" style="margin-top:0;">Current balance</div>
+      <div id="rechargebal" style="font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:700;color:var(--blue);">₹210</div>
+    </div>
+    <div class="section-label">Select amount</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div class="fareopt" data-amt="100">₹100</div>
+      <div class="fareopt sel" data-amt="200">₹200</div>
+      <div class="fareopt" data-amt="500">₹500</div>
+      <div class="fareopt" data-amt="1000">₹1000</div>
+    </div>
+    <div class="radiopt sel" data-payopt>
+      <div class="dot"></div>
+      <div style="font-size:12px;font-weight:600;">UPI</div>
+    </div>
+    <div class="radiopt" data-payopt>
+      <div class="dot"></div>
+      <div style="font-size:12px;font-weight:600;">Card ending 4021</div>
+    </div>
+    <div class="btn" id="rechargebtn" style="margin-top:auto;">Add ₹200 to wallet</div>
+  </div>
+</div>

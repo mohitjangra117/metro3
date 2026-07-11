@@ -1,0 +1,30 @@
+<div class="screen" id="scr-livejourney">
+  <div class="statusbar"><span>9:41</span><span>●●● 5G 100%</span></div>
+  <div class="appbar">
+    <div class="ic" onclick="back()">✕</div>
+    <h2>Live journey</h2>
+    <span class="livedot" style="margin-left:auto;margin-right:6px;"></span>
+  </div>
+  <div class="content">
+    <div class="card" style="text-align:center;">
+      <div id="liveprogresspercent" style="font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;color:var(--blue);">0%</div>
+      <div style="height:8px;background:var(--hair);border-radius:6px;margin:10px 0;overflow:hidden;">
+        <div id="liveprogressbar" class="progress-fill" style="width: 0%; --fillw: 0%;"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);" id="livejourneyroute">Noida Sector 15 → Kirti Nagar</div>
+    </div>
+    <div class="kpi-row">
+      <div class="kpi"><b id="livecurrentstation">Noida Sector 15</b><span>Current</span></div>
+      <div class="kpi"><b id="liveremainingdist">-- km</b><span>Remaining</span></div>
+    </div>
+    <div class="card">
+      <div class="section-label" style="margin-top:0;">Next station</div>
+      <div id="livenextstation" style="font-weight:700;font-size:13px;">Noida Sec - 16</div>
+      <div id="livenexttime" style="font-size:11px;color:var(--muted);">Arriving in 2 min</div>
+    </div>
+    <div class="card" style="background:var(--amber-tint);border:none;">
+      <div style="font-size:11px;color:var(--amber-dark);font-weight:700;">Coach B2 is less crowded right now</div>
+    </div>
+    <div class="btn amber" id="endjourney">End journey</div>
+  </div>
+</div>

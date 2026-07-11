@@ -1,0 +1,38 @@
+[
+  {
+    "min_km": 0,
+    "max_km": 2,
+    "token": 10,
+    "card": 10
+  },
+  {
+    "min_km": 2,
+    "max_km": 5,
+    "token": 20,
+    "card": 15
+  },
+  {
+    "min_km": 5,
+    "max_km": 12,
+    "token": 30,
+    "card": 25
+  },
+  {
+    "min_km": 12,
+    "max_km": 21,
+    "token": 40,
+    "card": 30
+  },
+  {
+    "min_km": 21,
+    "max_km": 32,
+    "token": 50,
+    "card": 40
+  },
+  {
+    "min_km": 32,
+    "max_km": 999,
+    "token": 60,
+    "card": 50
+  }
+]

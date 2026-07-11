@@ -1,0 +1,63 @@
+<div class="screen" id="scr-profile">
+  <div class="statusbar"><span>9:41</span><span>●●● 5G 100%</span></div>
+  <div class="appbar">
+    <h2>Profile</h2>
+    <div class="ic" onclick="push('settings')">⚙</div>
+  </div>
+  <div class="content">
+    <div class="card" style="display:flex;align-items:center;gap:11px;">
+      <div style="width:46px;height:46px;border-radius:50%;background:var(--blue-tint);color:var(--blue-dark);display:flex;align-items:center;justify-content:center;font-weight:700;">AR</div>
+      <div style="flex:1;">
+        <div style="font-weight:700;font-size:13px;">Aditi Rao</div>
+        <div style="font-size:11px;color:var(--muted);">Metro wallet · <span id="profwalletbal">₹210</span></div>
+      </div>
+      <div class="badge">Frequent rider</div>
+    </div>
+    <div class="kpi-row">
+      <div class="kpi"><b>128</b><span>Journeys</span></div>
+      <div class="kpi"><b>6</b><span>Favourites</span></div>
+      <div class="kpi"><b>4.8</b><span>Avg rating</span></div>
+    </div>
+    <div class="list-item" onclick="push('travelhistory')">
+      <div class="icwrap">◷</div>
+      <div style="flex:1;" class="t">Travel history</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="push('favorites')">
+      <div class="icwrap">♡</div>
+      <div style="flex:1;" class="t">Saved stations</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="push('wallet')">
+      <div class="icwrap">💳</div>
+      <div style="flex:1;" class="t">Wallet &amp; passes</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="push('notifications')">
+      <div class="icwrap">🔔</div>
+      <div style="flex:1;" class="t">Notifications</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="push('help')">
+      <div class="icwrap">❔</div>
+      <div style="flex:1;" class="t">Help &amp; support</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="push('settings')">
+      <div class="icwrap">⚙</div>
+      <div style="flex:1;" class="t">Settings</div>
+      <div class="r">›</div>
+    </div>
+    <div class="list-item" onclick="goRoot('login')">
+      <div class="icwrap">↪</div>
+      <div style="flex:1;" class="t">Log out</div>
+      <div class="r">›</div>
+    </div>
+  </div>
+  <div class="bottomnav">
+    <div class="n" data-tab="home" onclick="goRoot('home')"><span class="ni">⌂</span>Home</div>
+    <div class="n" data-tab="map" onclick="goRoot('map')"><span class="ni">▦</span>Map</div>
+    <div class="n" data-tab="wallet" onclick="goRoot('wallet')"><span class="ni">🎫</span>Tickets</div>
+    <div class="n active" data-tab="profile" onclick="goRoot('profile')"><span class="ni">◍</span>Profile</div>
+  </div>
+</div>

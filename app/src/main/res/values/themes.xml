@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.MetroCompanion" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#0D1B2A</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
